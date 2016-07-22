@@ -3,22 +3,20 @@
 //////////////////////////////
 
 .toc {
+  width: 270px;
+  height: 100%;
+  background: $c-jet;
+  color: white;
   padding: bs() 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  transition: transform .5s ease;
 
-  &-wrap {
-    width: 270px;
-    background: $c-jet;
-    color: white;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 2;
-    transition: transform .5s ease;
-
-    &.is-hidden {
-      transform: translateX(-100%);
-    }
+  &.is-hidden {
+    transform: translateX(-100%);
   }
 
   &-trigger {
@@ -73,6 +71,7 @@
 
     &-wrap {
       width: 50px;
+      height: 100%;
       background: black(.55);
       position: absolute;
       top: 0;

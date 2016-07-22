@@ -21,14 +21,29 @@
 // Components
 @import
   'components/table_of_contents',
-  'components/flip_pages'
+  'components/flip_pages',
+  'components/story_section'
 ;
 
 @include headings;
 @include body;
 @include content;
 
+html {
+  height: 100%;
+  font-size: 85%;
+
+  @include bp(alpha) {
+    font-size: 100%;
+  }
+
+  @include bp(charlie) {
+    font-size: 125%;
+  }
+}
+
 body {
+  min-height: 100%;
   color: #fff;
   font-family: 'Lora', serif;
   transition: background .75s ease;
@@ -81,6 +96,7 @@ ul {
 
 .main {
   margin-left: 50px;
+  padding-bottom: 25vh;
 }
 
 .footer {

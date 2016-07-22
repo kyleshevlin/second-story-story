@@ -5,7 +5,7 @@ const { service } = Ember.inject;
 
 export default Ember.Component.extend({
   tableOfContents: service(),
-  classNames: ['toc-wrap'],
+  classNames: ['toc'],
   classNameBindings: ['tableOfContents.isHidden:is-hidden'],
   actions: {
     tocTrigger() {
