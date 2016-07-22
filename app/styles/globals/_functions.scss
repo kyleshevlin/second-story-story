@@ -1,0 +1,11 @@
+//////////////////////////////
+// Functions
+//////////////////////////////
+
+@function black($alpha: 1) {
+  @return rgba(black, $alpha);
+}
+
+@function white($alpha: 1) {
+  @return rgba(white, $alpha);
+}

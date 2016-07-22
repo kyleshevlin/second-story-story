@@ -1,0 +1,88 @@
+//////////////////////////////
+// Table of Contents
+//////////////////////////////
+
+.toc {
+
+  &-wrap {
+    width: 270px;
+    background: $c-jet;
+    color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    transition: transform .5s ease;
+
+    &.is-hidden {
+      transform: translateX(-100%);
+    }
+  }
+
+  &-trigger {
+    width: 100%;
+    background: transparent;
+    padding: 30px 0;
+    margin: 0 auto;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    &-line {
+      display: block;
+      width: $toc-trigger-width;
+      height: $toc-trigger-height;
+      background: transparent;
+      margin: 0 auto;
+      position: relative;
+
+      .is-hidden & {
+        background: white;
+      }
+
+      &:before,
+      &:after {
+        content: '';
+        display: block;
+        width: $toc-trigger-width;
+        height: $toc-trigger-height;
+        background: white;
+        position: absolute;
+        left: 0;
+        transition: transform .3s ease;
+
+        .is-hidden & {
+          transform: rotate(0);
+        }
+      }
+
+      &:before {
+        top: $toc-trigger-separation;
+        transform-origin: left center;
+        transform: translateY(-1px) rotate(45deg);
+      }
+
+      &:after {
+        bottom: $toc-trigger-separation;
+        transform-origin: left center;
+        transform: translateY(1px) rotate(-45deg);
+      }
+    }
+
+    &-wrap {
+      width: 50px;
+      background: black(.55);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 100%;
+    }
+  }
+
+  &-list {
+    list-style: none;
+
+    &-item {}
+  }
+}

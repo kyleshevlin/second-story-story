@@ -1,0 +1,85 @@
+//////////////////////////////
+// Import All The Things
+//////////////////////////////
+
+// Vendor
+@import 'normalize';
+
+// Bower Components
+@import
+  '../../bower_components/shevy/core/shevy',
+  '../../bower_components/condo/core/condo'
+;
+
+// Globals
+@import
+  'globals/variables',
+  'globals/functions'
+;
+
+// Components
+@import
+  'components/table_of_contents',
+  'components/flip_pages'
+;
+
+body {
+  color: #fff;
+  font-family: 'Lora', serif;
+  transition: background .75s ease;
+
+  &.index {
+    background: $c-spanish-crimson;
+  }
+
+  &.chapter-one {
+    background: $c-maximum-blue;
+  }
+
+  &.chapter-two {
+    background: $c-orange-soda;
+  }
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: bs();
+}
+
+a {
+  color: inherit;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+ol,
+ul {
+  padding-left: 0;
+
+  & > & {
+    padding-left: bs();
+  }
+}
+
+.container {
+  @include container(85%);
+}
+
+.main {
+  margin-left: 50px;
+}
+
+.footer {
+  width: 100%;
+  background: $c-jet;
+  padding: bs() 0 bs() 50px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}
