@@ -1,7 +1,13 @@
 {{#if previousLink}}
-  {{link-to prevLabel prev class="flip_pages-previous"}}
+  <div class="flip_pages-previous-wrap">
+    <span class="flip_pages-arrow icon-arrow-left"></span>
+    {{link-to prevLabel prev class="flip_pages-previous"}}
+  </div>
 {{/if}}
 
 {{#if nextLink}}
-  {{link-to nextLabel next class="flip_pages-next"}}
+  <div class="flip_pages-next-wrap">
+    {{link-to nextLabel next class="flip_pages-next"}}
+    <span class="flip_pages-arrow icon-arrow-right"></span>
+  </div>
 {{/if}}

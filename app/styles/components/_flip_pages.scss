@@ -8,17 +8,21 @@
   padding: bs(.5) 0;
   margin-bottom: bs();
 
-  &-previous,
-  &-next {
+  &-previous-wrap,
+  &-next-wrap {
     width: 50%;
   }
 
-  &-previous {
+  &-previous-wrap {
     float: left;
   }
 
-  &-next {
+  &-next-wrap {
     float: right;
     text-align: right;
+  }
+
+  &-arrow {
+    padding: 0 3px;
   }
 }
