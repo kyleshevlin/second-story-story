@@ -3,5 +3,21 @@
 //////////////////////////////
 
 .flip_pages {
-  list-style: none;
+  @include clearfix;
+  width: 100%;
+  padding: bs(.5) 0;
+
+  &-previous,
+  &-next {
+    width: 50%;
+  }
+
+  &-previous {
+    float: left;
+  }
+
+  &-next {
+    float: right;
+    text-align: right;
+  }
 }

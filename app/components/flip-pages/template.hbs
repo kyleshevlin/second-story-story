@@ -1,7 +1,7 @@
-{{#if prev}}
-  <li class="flip_pages-item">{{link-to prevLabel prev class="flip_pages-item-link"}}</li>
+{{#if previousLink}}
+  {{link-to prevLabel prev class="flip_pages-previous"}}
 {{/if}}
 
-{{#if next}}
-  <li class="flip_pages-item">{{link-to nextLabel next class="flip_pages-item-link"}}</li>
+{{#if nextLink}}
+  {{link-to nextLabel next class="flip_pages-next"}}
 {{/if}}

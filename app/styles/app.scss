@@ -14,7 +14,8 @@
 // Globals
 @import
   'globals/variables',
-  'globals/functions'
+  'globals/functions',
+  'globals/mixins'
 ;
 
 // Components
@@ -22,6 +23,10 @@
   'components/table_of_contents',
   'components/flip_pages'
 ;
+
+@include headings;
+@include body;
+@include content;
 
 body {
   color: #fff;
@@ -41,11 +46,16 @@ body {
   }
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
+  line-height: 1.1;
   margin-top: 0;
-  margin-bottom: bs();
 }
 
 a {

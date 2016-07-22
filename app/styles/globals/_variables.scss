@@ -10,6 +10,12 @@ $c-saffron: #F9C22E;
 $c-japanese-violet: #5C2751;
 $c-jet: #32322C;
 
+// Shevy
+$shevy: (
+  base-font-scale: (4, 3, 2, 1.75, 1.25, 1),
+  proximity: true
+);
+
 // Sizes
 $toc-trigger-width: 25px;
 $toc-trigger-height: 2px;
