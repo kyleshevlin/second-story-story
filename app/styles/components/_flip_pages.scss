@@ -5,21 +5,37 @@
 .flip_pages {
   @include clearfix;
   width: 100%;
+  font-family: $f-monty;
   padding: bs(.5) 0;
   margin-bottom: bs();
 
   &-previous-wrap,
   &-next-wrap {
-    width: 50%;
+
+    @include bp(alpha) {
+      width: 50%;
+    }
   }
 
   &-previous-wrap {
-    float: left;
+
+    @include bp(alpha) {
+      float: left;
+    }
   }
 
   &-next-wrap {
-    float: right;
-    text-align: right;
+
+    @include bp(alpha) {
+      float: right;
+      text-align: right;
+    }
+  }
+
+  &-previous,
+  &-next {
+    display: inline-block;
+    padding: bs(.25) 0;
   }
 
   &-arrow {

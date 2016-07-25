@@ -45,20 +45,35 @@ html {
 
 body {
   min-height: 100%;
-  color: #fff;
+  color: #000;
   font-family: 'Lora', serif;
-  transition: background .75s ease;
+  position: relative;
+  transition: background .75s ease,
+              color .75s ease;
 
   &.index {
     background: $c-spanish-crimson;
+    color: white;
   }
 
   &.chapter-one {
     background: $c-maximum-blue;
+    color: white;
   }
 
   &.chapter-two {
     background: $c-orange-soda;
+    color: white;
+  }
+
+  &.chapter-three {
+    background: $c-japanese-violet;
+    color: white;
+  }
+
+  &.chapter-four {
+    background: $c-amazonite;
+    color: white;
   }
 }
 
@@ -97,16 +112,30 @@ ul {
 
 .main {
   margin-left: 50px;
-  padding-bottom: 25vh;
+  padding-bottom: 50vh;
 }
 
 .footer {
-  width: 100%;
   background: $c-jet;
+  color: white;
+  font-family: $f-monty;
   padding: bs() 0 bs() 50px;
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  position: relative;
   z-index: 3;
+
+  @include bp(alpha) {
+    font-size: 85%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  @include bp(charlie) {
+    font-size: 75%;
+  }
+
+  p {
+    margin: 0;
+  }
 }

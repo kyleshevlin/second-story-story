@@ -8,6 +8,8 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('chapter-one');
   this.route('chapter-two');
+  this.route('chapter-three');
+  this.route('chapter-four');
 });
 
 export default Router;

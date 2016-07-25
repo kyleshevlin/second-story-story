@@ -4,10 +4,10 @@
 
 .toc {
   width: 270px;
-  height: 100%;
   background: $c-jet;
   color: white;
-  padding: bs() 0;
+  font-family: $f-monty;
+  padding: bs() 0 0;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -71,7 +71,6 @@
 
     &-wrap {
       width: 50px;
-      height: 100%;
       background: black(.55);
       position: absolute;
       top: 0;

@@ -3,9 +3,9 @@
 //////////////////////////////
 
 @function black($alpha: 1) {
-  @return rgba(black, $alpha);
+  @return rgba($c-black, $alpha);
 }
 
 @function white($alpha: 1) {
-  @return rgba(white, $alpha);
+  @return rgba($c-white, $alpha);
 }

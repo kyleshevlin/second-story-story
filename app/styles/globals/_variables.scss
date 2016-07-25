@@ -9,17 +9,25 @@ $breakpoints: (
 );
 
 // Colors
+$c-white: #fff;
+$c-black: #000;
 $c-spanish-crimson: #E01A4F;
 $c-orange-soda: #F15946;
 $c-maximum-blue: #53B3CB;
 $c-saffron: #F9C22E;
 $c-japanese-violet: #5C2751;
+$c-amazonite: #13C4A3;
 $c-jet: #32322C;
+
+// Fonts
+$f-monty: 'Montserrat', sans-serif;
+$f-lora: 'Lora', serif;
 
 // Shevy
 $shevy: (
-  base-font-size: 1rem,
+  base-font-size: 1em,
   base-font-scale: (3.5, 2.5, 2, 1.75, 1.25, 1),
+  base-line-height: 1.8,
   proximity: true
 );
 
