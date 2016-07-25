@@ -14,6 +14,7 @@ Router.map(function() {
   this.route('chapter-two');
   this.route('chapter-three');
   this.route('chapter-four');
+  this.route('not-found', { path: '/*path'});
 });
 
 export default Router;
