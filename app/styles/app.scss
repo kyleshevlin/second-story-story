@@ -45,16 +45,12 @@ html {
 
 body {
   min-height: 100%;
-  color: #000;
+  background: $c-spanish-crimson;
+  color: white;
   font-family: 'Lora', serif;
   position: relative;
   transition: background .75s ease,
               color .75s ease;
-
-  &.index {
-    background: $c-spanish-crimson;
-    color: white;
-  }
 
   &.chapter-one {
     background: $c-maximum-blue;
